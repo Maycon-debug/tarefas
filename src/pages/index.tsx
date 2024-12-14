@@ -3,6 +3,7 @@ import styles from '../../styles/home.module.css';
 import Image from 'next/image'
 import heroImg from '../../public/assets/hero.png'
 
+
 export default function Home(){
   return(
     <div className={styles.container}>

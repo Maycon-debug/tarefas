@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import link from 'next/link'
+import Link from 'next/link';
 
 export function Header(){
     return(
@@ -7,10 +7,17 @@ export function Header(){
             <section className={styles.content}>
                 <nav className={styles.nav}>
 
-                    
-                    <h1>Tarefas+</h1>
-                    
+                    <Link href="/"> 
+                    <h1 className={styles.logo}>
+                        Tarefas<span>+</span>
+                        </h1>
+                    </Link>
+                    <Link href="/dashboard" className={styles.link}>Meu Painel</Link>
                 </nav>
+
+                  <button className={styles.loginButton}>Acessar</button>  
+
+
             </section>
         </header>
     );
